@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blindify - Véletlen Spotify Lejátszó</title>
+    <meta name="description" content="Hallgasd a Spotify lejátszási listáidat új módon - vakon!">
+    <link rel="icon" type="image/png" href="/blindify-logo.png">
+    <link rel="apple-touch-icon" href="/blindify-logo.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Spotify SDK -->
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="app"></div>
+    <!-- Spotify Web Playback SDK script -->
+    <script>
+        window.onSpotifyWebPlaybackSDKReady = () => {
+            window.SpotifyPlayerReady = true;
+            const event = new Event('spotify-player-ready');
+            document.dispatchEvent(event);
+        };
+    </script>
+</body>
+</html>
