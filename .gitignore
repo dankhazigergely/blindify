@@ -43,6 +43,31 @@ __pycache__
 /backend/.cache/
 /backend/.DS_Store
 
+# --- PHP backend ---
+/backend/.phpunit.cache
+/backend/node_modules
+/backend/public/build
+/backend/public/hot
+/backend/public/storage
+/backend/storage/*.key
+/backend/storage/pail
+/backend/vendor
+/backend/.env
+/backend/.env.backup
+/backend/.env.production
+/backend/.phpactor.json
+/backend/.phpunit.result.cache
+/backend/Homestead.json
+/backend/Homestead.yaml
+/backend/npm-debug.log
+/backend/yarn-error.log
+/backend/auth.json
+/backend/.fleet
+/backend/.idea
+/backend/.nova
+/backend/.vscode
+/backend/.zed
+
 # --- VSCode/IDE config ---
 .vscode/
 .idea/
