@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blindify - Random Spotify Player</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <!-- Tailwind CSS (will be added via PostCSS) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Spotify Web Playback SDK -->
+  <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  <script>
+    window.onSpotifyWebPlaybackSDKReady = () => {
+      window.SpotifyPlayerReady = true;
+      document.dispatchEvent(new Event('spotify-player-ready'));
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index-aJMOCS23.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Btzx1cRK.css">
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
